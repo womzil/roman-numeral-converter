@@ -34,9 +34,9 @@ main {
     flex-flow: column;
     gap: 10px;
     align-items: center;
+    min-height: calc(100vh - (var(--header-height) + var(--footer-height)));
     height: calc(100% - (var(--header-height) + var(--footer-height)));
     padding: 0 10px;
-
 }
 
 main>h2 {
@@ -44,48 +44,6 @@ main>h2 {
     padding: 10px 0;
     font-size: 1.2rem;
     text-align: center;
-}
-
-#converter {
-    display: flex;
-    flex-flow: column;
-    gap: 10px;
-    align-items: center;
-}
-
-#converter input {
-    width: 15rem;
-}
-
-#converter button {
-    width: 10rem;
-    margin: 2px;
-}
-
-#converter button:hover {
-    cursor: pointer;
-    color: var(--text-color);
-    background-color: var(--secondary-color);
-    margin: 0;
-    border: 2px solid var(--text-color);
-}
-
-#converter input,
-#converter button {
-    border: 0;
-    border-radius: 10px;
-    color: var(--text-color);
-    background-color: var(--secondary-color);
-}
-
-#output {
-    text-align: center;
-    background-color: var(--secondary-color);
-    padding: 15px;
-    border: 0;
-    border-radius: 10px;
-    font-size: 1.5rem;
-    width: 15rem;
 }
 
 footer {
@@ -102,11 +60,15 @@ footer>span:hover {
     text-shadow: 1px 1px 2px black;
 }
 
-footer>a {
+a {
     color: var(--text-color);
     text-decoration: none;
 }
 
-footer>a:hover {
+a:hover {
     text-decoration: underline;
+}
+
+#converter>input:last-of-type {
+    margin: 0 0 20px 0;
 }

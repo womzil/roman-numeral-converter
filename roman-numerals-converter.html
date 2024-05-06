@@ -7,23 +7,30 @@
     <link rel="icon" type="image/x-icon" href="https://donutparty.top/images/donut.ico">
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="styles/basic-layout.css" />
+    <link rel="stylesheet" href="styles/roman-numerals-converter.css" />
     <script src="https://kit.fontawesome.com/c07e0218a9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <h1>womzil's tools</h1>
+        <h1>Roman numeral converter</h1>
     </header>
     <main>
-        <h2>This is the place where I'll keep my little tools.</h2>
-        <a href="./metric-units-converter.html">Metric units converter</a>
-        <a href="./roman-numerals-converter.html">Roman numerals converter</a>
+        <h2>This website was created as an exercise project for freeCodeCamp.</h2>
+        <div id="converter">
+            <input title="Number to convert" id="number" type="number" />
+            <button id="convert-btn">Convert</button>
+        </div>
+        <div id="output">
+            None
+        </div>
     </main>
     <footer>
         <span id="display-mode-button" class="fa-regular fa-sun"></span>
         <a href="https://github.com/womzil">Created by womzil</a>
     </footer>
     <script src="./scripts/darkMode.js"></script>
+    <script src="./scripts/romanNumeralsConverter.js"></script>
 </body>
 
 </html>

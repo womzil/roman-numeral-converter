@@ -1,0 +1,41 @@
+#converter {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    align-items: center;
+}
+
+#converter input {
+    width: 15rem;
+}
+
+#converter button {
+    width: 10rem;
+    margin: 2px;
+}
+
+#converter button:hover {
+    cursor: pointer;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    margin: 0;
+    border: 2px solid var(--text-color);
+}
+
+#converter input,
+#converter button {
+    border: 0;
+    border-radius: 10px;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+}
+
+#output {
+    text-align: center;
+    background-color: var(--secondary-color);
+    padding: 15px;
+    border: 0;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    width: 15rem;
+}

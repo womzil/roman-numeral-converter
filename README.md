@@ -1,4 +1,21 @@
+# Metric units converter
+
+Simple metric units converter made to server my friend.
+
+## Features
+
+- All units listed on [Wikipedia](https://en.wikipedia.org/wiki/Metric_prefix)
+- Support for fractions
+- Instant conversion to all units
+- Input can be in any unit and can be converted to any other unit
+
+## To-do
+
+[ ] Fix some bugs with very high/low powers, caused by JavaScript weird way of handling numbers
+[ ] Fix light/dark mode switch
+
 # Roman numeral converter
+
 A simple roman numeral converter written in plain HTML, CSS and JavaScript.
 
 Created according to requirements provided by [freeCodeCamp](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/build-a-roman-numeral-converter-project/build-a-roman-numeral-converter), as part of certification project.

@@ -1,45 +1,6 @@
-const rootStyle = document.querySelector(":root").style;
-const displayModeButton = document.getElementById("display-mode-button");
 const inputField = document.getElementById("number");
 const convertBtn = document.getElementById("convert-btn");
 const output = document.getElementById("output");
-
-const backgroundColorDark = "rgb(20, 20, 20)";
-const backgroundColorLight = "rgb(220, 220, 220)";
-const secondaryColorDark = "rgb(40, 40, 40)";
-const secondaryColorLight = "rgb(180, 180, 180)";
-const textColorDark = "white";
-const textColorLight = "black";
-
-if (localStorage.getItem("darkMode") === undefined) {
-    localStorage.setItem("darkMode", true);
-}
-
-let darkMode = localStorage.getItem("darkMode");
-
-const switchDisplayMode = () => {
-    displayModeButton.classList.toggle("fa-sun");
-    displayModeButton.classList.toggle("fa-moon");
-
-    // Switch to dark mode
-    if (darkMode) {
-        darkMode = false;
-
-        rootStyle.setProperty("--background-color", backgroundColorLight);
-        rootStyle.setProperty("--secondary-color", secondaryColorLight);
-        rootStyle.setProperty("--text-color", textColorLight);
-    }
-    // Switch to light mode
-    else {
-        darkMode = true;
-
-        rootStyle.setProperty("--background-color", backgroundColorDark);
-        rootStyle.setProperty("--secondary-color", secondaryColorDark);
-        rootStyle.setProperty("--text-color", textColorDark);
-    }
-
-    localStorage.setItem("darkMode", darkMode);
-};
 
 let input;
 let result = "";
@@ -114,11 +75,8 @@ const convertToRoman = () => {
         input -= input;
     }
 
-    console.log(input);
-
     output.innerText = result;
     result = "";
 };
 
-displayModeButton.addEventListener("click", switchDisplayMode);
 convertBtn.addEventListener("click", convertToRoman);
