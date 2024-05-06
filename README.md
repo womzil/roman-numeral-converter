@@ -11,8 +11,8 @@ Simple metric units converter made to server my friend.
 
 ## To-do
 
-[ ] Fix some bugs with very high/low powers, caused by JavaScript weird way of handling numbers
-[ ] Fix light/dark mode switch
+- [ ] Fix some bugs with very high/low powers, caused by JavaScript weird way of handling numbers
+- [ ] Fix light/dark mode switch
 
 # Roman numeral converter
 
