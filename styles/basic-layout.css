@@ -20,6 +20,7 @@ header {
     height: var(--header-height);
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: var(--secondary-color);
     font-variant-caps: all-small-caps;
 }

@@ -1,26 +1,32 @@
-# Metric units converter
+# womzil's tools
+
+A small repository of tools written in HTML, CSS and JavaScript. I decided to create this repo, because these tools on their own are too small for separate repos.
+
+Every tool is described below.
+
+## Metric units converter
 
 Simple metric units converter made to server my friend.
 
-## Features
+### Features
 
 - All units listed on [Wikipedia](https://en.wikipedia.org/wiki/Metric_prefix)
 - Support for fractions
 - Instant conversion to all units
 - Input can be in any unit and can be converted to any other unit
 
-## To-do
+### To-do
 
 - [ ] Fix some bugs with very high/low powers, caused by JavaScript weird way of handling numbers
 - [ ] Fix light/dark mode switch
 
-# Roman numeral converter
+## Roman numeral converter
 
 A simple roman numeral converter written in plain HTML, CSS and JavaScript.
 
 Created according to requirements provided by [freeCodeCamp](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/build-a-roman-numeral-converter-project/build-a-roman-numeral-converter), as part of certification project.
 
-## Requirements
+### Requirements
 
 - You should have an input element with an id of "number"
 - You should have a button element with an id of "convert-btn"
