@@ -46,10 +46,11 @@ arrayOfUnits.forEach(key => converterDiv.innerHTML += `
 `);
 
 const displayResults = event => {
-    const baseValue = event.target.value * Math.pow(10, units[event.target.id]);
+    const baseValue = bigDecimal.multiply(event.target.value, Math.pow(10, units[event.target.id]).toString());
 
     arrayOfUnits.forEach(key => {
-        if (key !== event.target.id) document.getElementById(key).value = baseValue / Math.pow(10, units[key]);
+        const precision = baseValue.slice(baseValue.lastIndexOf(".")).length - 1 + units[key] >= 0 ? baseValue.slice(baseValue.lastIndexOf(".")).length - 1 + units[key] : 0;
+        if (key !== event.target.id) document.getElementById(key).value = bigDecimal.divide(baseValue, Math.pow(10, units[key]).toString(), precision);
     });
 };
 

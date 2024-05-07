@@ -4,6 +4,10 @@ A small repository of tools written in HTML, CSS and JavaScript. I decided to cr
 
 Every tool is described below.
 
+### To-do
+
+- [ ] Fix light/dark mode switch
+
 ## Metric units converter
 
 Simple metric units converter made to server my friend.
@@ -14,11 +18,6 @@ Simple metric units converter made to server my friend.
 - Support for fractions
 - Instant conversion to all units
 - Input can be in any unit and can be converted to any other unit
-
-### To-do
-
-- [ ] Fix some bugs with very high/low powers, caused by JavaScript weird way of handling numbers
-- [ ] Fix light/dark mode switch
 
 ## Roman numeral converter
 
