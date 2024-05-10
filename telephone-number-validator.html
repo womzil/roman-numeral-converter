@@ -3,28 +3,37 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>womzil's tools</title>
+    <title>Telephone number validator</title>
     <link rel="icon" type="image/x-icon" href="https://donutparty.top/images/donut.ico">
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="styles/basic-layout.css" />
+    <link rel="stylesheet" href="styles/telephone-number-validator.css" />
     <script src="https://kit.fontawesome.com/c07e0218a9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <h1>womzil's tools</h1>
+        <h1>Telephone number validator</h1>
     </header>
     <main>
-        <h2>This is the place where I'll keep my little tools.</h2>
-        <a href="./metric-units-converter.html">Metric units converter</a>
-        <a href="./roman-numerals-converter.html">Roman numerals converter</a>
-        <a href="./telephone-number-validator.html">Telephone number validator</a>
+        <div id="phone">
+            <div id="island"></div>
+            <div id="converter">
+                <label for="user-input">Enter a phone number</label>
+                <input id="user-input" name="user-input" />
+                <button id="check-btn">Check</button>
+                <button id="clear-btn">Clear</button>
+            </div>
+            <div id="results-div">
+            </div>
+        </div>
     </main>
     <footer>
         <span id="display-mode-button" class="fa-regular fa-sun"></span>
         <a href="https://github.com/womzil">Created by womzil</a>
     </footer>
     <script src="./scripts/darkMode.js"></script>
+    <script src="./scripts/telephoneNumberValidator.js"></script>
 </body>
 
 </html>
