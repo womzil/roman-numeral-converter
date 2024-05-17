@@ -41,3 +41,15 @@ Created according to requirements provided by [freeCodeCamp](https://www.freecod
 ### Requirements
 
 Created according to requirements provided by [freeCodeCamp](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/build-a-telephone-number-validator-project/build-a-telephone-number-validator), as part of certification project.
+
+## Cash register
+### Features
+
+- Checks if it's possible to return the change
+- Returns the change in bills based on the contents of the cash register's drawer
+- Displays an alert when not enough money was given
+- Functional numerical keyboard
+
+### Requirements
+
+Created according to requirements provided by [freeCodeCamp](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/build-a-cash-register-project/build-a-cash-register), as part of certification project.
