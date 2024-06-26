@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>womzil's tools</title>
+    <link rel="icon" type="image/x-icon" href="https://donutparty.top/images/donut.ico">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./styles/basic-layout.css" />
+    <link rel="stylesheet" href="./styles/pokemon-search-app.css" />
+    <script src="https://kit.fontawesome.com/c07e0218a9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Pokémon Search App</h1>
+    </header>
+    <main>
+        <label for="search-input">Please, input name or ID to search.</label>
+        <input id="search-input" name="search-input" required type="text" />
+        <button id="search-button">Search</button>
+
+        <div id="pokemon">
+            <img id="sprite" alt="Sprite" />
+
+            <ul>
+                <li>Name: <span id="pokemon-name"></span></li>
+                <li>ID: <span id="pokemon-id"></span></li>
+                <li>Weight: <span id="weight"></span></li>
+                <li>Height: <span id="height"></span></li>
+                <li>Types: <ul id="types"></ul>
+                </li>
+                <li>HP: <span id="hp"></span></li>
+                <li>Attack: <span id="attack"></span></li>
+                <li>Defense: <span id="defense"></span></li>
+                <li>Special attack: <span id="special-attack"></span></li>
+                <li>Special defense: <span id="special-defense"></span></li>
+                <li>Speed: <span id="speed"></span></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <span id="display-mode-button" class="fa-regular fa-sun"></span>
+        <a href="https://github.com/womzil">Created by womzil</a>
+    </footer>
+    <script src="./scripts/pokemonSearchApp.js"></script>
+    <script src="./scripts/darkMode.js"></script>
+</body>
+
+</html>
